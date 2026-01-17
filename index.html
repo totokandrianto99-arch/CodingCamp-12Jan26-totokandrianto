@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Profile</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="brand">
+    <img src="img/logo.jpg" alt="Company Logo" class="logo-img">
+    <h1 class="logo">MyCompany</h1>
+  </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#profile">Our Profile</a>
+    <a href="#message">Message Us</a>
+  </nav>
+</header>
+
+
+<section id="home" class="section hero">
+  <div class="hero-content">
+    <h2>Hi <span id="userName">Guest</span>, Welcome to Website</h2>
+    <p>We provide digital solutions for your business</p>
+  </div>
+</section>
+
+
+  <!-- ===== HEADQUARTER ===== -->
+  <section class="section">
+    <h2 class="section-title">Our Headquarter</h2>
+    <div class="headquarter">
+      <div class="circle">Jakarta</div>
+      <div class="circle">Bandung</div>
+      <div class="circle">Surabaya</div>
+    </div>
+  </section>
+
+  <!-- ===== OUR PROFILE ===== -->
+  <section id="profile" class="section">
+    <h2 class="section-title">About Our Company</h2>
+    <p class="text-center">
+      MyCompany is a technology company focused on innovation and high-quality
+      digital services.
+    </p>
+
+    <div class="vision-mission">
+      <div>
+        <h3>Vision</h3>
+        <p>To become a trusted digital solution provider.</p>
+      </div>
+      <div>
+        <h3>Mission</h3>
+        <ul>
+          <li>Deliver quality products</li>
+          <li>Customer satisfaction</li>
+          <li>Continuous improvement</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MESSAGE US ===== -->
+  <section id="message" class="section">
+    <h2 class="section-title">Message Us</h2>
+
+    <form id="contactForm" class="form">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+
+      <!-- PHONE: ONLY NUMBER -->
+      <input
+        type="tel"
+        id="phone"
+        placeholder="Phone Number"
+        inputmode="numeric"
+        minlength="10"
+        maxlength="13"
+        required
+      >
+
+      <textarea id="messageText" placeholder="Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="result" class="result"></div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
